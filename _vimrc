@@ -50,10 +50,13 @@ if version >= 500
 endif
 
 " local viminfo filename pattern and loading
-au BufRead *.lvi.* let &vi = &vi . ",n" . expand('%:t') . ".viminfo"
-au BufRead *.viminfo let &vi = "'100,<50,s10,h,rA:,rB:,"
+let s:baseviminfo = "'100,<50,s10,h,rA:,rB:"
+" For .lvi. named files, insert filename into name of viminfo file
+let s:lviviminfo = s:baseviminfo . ",n" . expand('%:t') . ".viminfo"
+au BufRead *.lvi.* let &vi = s:lviviminfo
+au BufRead *.viminfo let &vi = s:defaultviminfo
 au BufRead *.lvi.* rv!
-au BufWritePre *.lvi.* let &vi = &vi . ",n" . expand('%:t') . ".viminfo"
-au BufWritePre *.viminfo let &vi = "'100,<50,s10,h,rA:,rB:,"
-au BufWritePre *.lvi.* wv!
+au VimLeavePre *.lvi.* let &vi = s:lviviminfo
+au VimLeavePre *.viminfo let &vi = s:defaultviminfo
+au VimLeavePre *.lvi.* wv!
 

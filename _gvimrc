@@ -17,4 +17,3 @@ map! <S-Insert> <MiddleMouse>
 let &guioptions = substitute(&guioptions, "t", "", "g")
 " Always show filetypes in menu
 let do_syntax_sel_menu = 1|runtime! synmenu.vim|aunmenu &Syntax.&Show\ filetypes\ in\ menu
-
