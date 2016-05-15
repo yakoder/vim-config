@@ -1,0 +1,753 @@
+! $XConsortium: rgb.txt,v 10.41 94/02/20 18:39:36 rws Exp $
+fffafa		snow
+f8f8ff		ghost white
+f8f8ff		GhostWhite
+f5f5f5		white smoke
+f5f5f5		WhiteSmoke
+dcdcdc		gainsboro
+fffaf0		floral white
+fffaf0		FloralWhite
+fdf5e6		old lace
+fdf5e6		OldLace
+faf0e6		linen
+faebd7		antique white
+faebd7		AntiqueWhite
+ffefd5		papaya whip
+ffefd5		PapayaWhip
+ffebcd		blanched almond
+ffebcd		BlanchedAlmond
+ffe4c4		bisque
+ffdab9		peach puff
+ffdab9		PeachPuff
+ffdead		navajo white
+ffdead		NavajoWhite
+ffe4b5		moccasin
+fff8dc		cornsilk
+fffff0		ivory
+fffacd		lemon chiffon
+fffacd		LemonChiffon
+fff5ee		seashell
+f0fff0		honeydew
+f5fffa		mint cream
+f5fffa		MintCream
+f0ffff		azure
+f0f8ff		alice blue
+f0f8ff		AliceBlue
+e6e6fa		lavender
+fff0f5		lavender blush
+fff0f5		LavenderBlush
+ffe4e1		misty rose
+ffe4e1		MistyRose
+ffffff		white
+000000		black
+2f4f4f		dark slate gray
+2f4f4f		DarkSlateGray
+2f4f4f		dark slate grey
+2f4f4f		DarkSlateGrey
+696969		dim gray
+696969		DimGray
+696969		dim grey
+696969		DimGrey
+708090		slate gray
+708090		SlateGray
+708090		slate grey
+708090		SlateGrey
+778899		light slate gray
+778899		LightSlateGray
+778899		light slate grey
+778899		LightSlateGrey
+bebebe		gray
+bebebe		grey
+d3d3d3		light grey
+d3d3d3		LightGrey
+d3d3d3		light gray
+d3d3d3		LightGray
+191970		midnight blue
+191970		MidnightBlue
+000080		navy
+000080		navy blue
+000080		NavyBlue
+6495ed		cornflower blue
+6495ed		CornflowerBlue
+483d8b		dark slate blue
+483d8b		DarkSlateBlue
+6a5acd		slate blue
+6a5acd		SlateBlue
+7b68ee		medium slate blue
+7b68ee		MediumSlateBlue
+8470ff		light slate blue
+8470ff		LightSlateBlue
+0000cd		medium blue
+0000cd		MediumBlue
+4169e1		royal blue
+4169e1		RoyalBlue
+0000ff		blue
+1e90ff		dodger blue
+1e90ff		DodgerBlue
+00bfff		deep sky blue
+00bfff		DeepSkyBlue
+87ceeb		sky blue
+87ceeb		SkyBlue
+87cefa		light sky blue
+87cefa		LightSkyBlue
+4682b4		steel blue
+4682b4		SteelBlue
+b0c4de		light steel blue
+b0c4de		LightSteelBlue
+add8e6		light blue
+add8e6		LightBlue
+b0e0e6		powder blue
+b0e0e6		PowderBlue
+afeeee		pale turquoise
+afeeee		PaleTurquoise
+00ced1		dark turquoise
+00ced1		DarkTurquoise
+48d1cc		medium turquoise
+48d1cc		MediumTurquoise
+40e0d0		turquoise
+00ffff		cyan
+e0ffff		light cyan
+e0ffff		LightCyan
+5f9ea0		cadet blue
+5f9ea0		CadetBlue
+66cdaa		medium aquamarine
+66cdaa		MediumAquamarine
+7fffd4		aquamarine
+006400		dark green
+006400		DarkGreen
+556b2f		dark olive green
+556b2f		DarkOliveGreen
+8fbc8f		dark sea green
+8fbc8f		DarkSeaGreen
+2e8b57		sea green
+2e8b57		SeaGreen
+3cb371		medium sea green
+3cb371		MediumSeaGreen
+20b2aa		light sea green
+20b2aa		LightSeaGreen
+98fb98		pale green
+98fb98		PaleGreen
+00ff7f		spring green
+00ff7f		SpringGreen
+7cfc00		lawn green
+7cfc00		LawnGreen
+00ff00		green
+7fff00		chartreuse
+00fa9a		medium spring green
+00fa9a		MediumSpringGreen
+adff2f		green yellow
+adff2f		GreenYellow
+32cd32		lime green
+32cd32		LimeGreen
+9acd32		yellow green
+9acd32		YellowGreen
+228b22		forest green
+228b22		ForestGreen
+6b8e23		olive drab
+6b8e23		OliveDrab
+bdb76b		dark khaki
+bdb76b		DarkKhaki
+f0e68c		khaki
+eee8aa		pale goldenrod
+eee8aa		PaleGoldenrod
+fafad2		light goldenrod yellow
+fafad2		LightGoldenrodYellow
+ffffe0		light yellow
+ffffe0		LightYellow
+ffff00		yellow
+ffd700		gold
+eedd82		light goldenrod
+eedd82		LightGoldenrod
+daa520		goldenrod
+b8860b		dark goldenrod
+b8860b		DarkGoldenrod
+bc8f8f		rosy brown
+bc8f8f		RosyBrown
+cd5c5c		indian red
+cd5c5c		IndianRed
+8b4513		saddle brown
+8b4513		SaddleBrown
+a0522d		sienna
+cd853f		peru
+deb887		burlywood
+f5f5dc		beige
+f5deb3		wheat
+f4a460		sandy brown
+f4a460		SandyBrown
+d2b48c		tan
+d2691e		chocolate
+b22222		firebrick
+a52a2a		brown
+e9967a		dark salmon
+e9967a		DarkSalmon
+fa8072		salmon
+ffa07a		light salmon
+ffa07a		LightSalmon
+ffa500		orange
+ff8c00		dark orange
+ff8c00		DarkOrange
+ff7f50		coral
+f08080		light coral
+f08080		LightCoral
+ff6347		tomato
+ff4500		orange red
+ff4500		OrangeRed
+ff0000		red
+ff69b4		hot pink
+ff69b4		HotPink
+ff1493		deep pink
+ff1493		DeepPink
+ffc0cb		pink
+ffb6c1		light pink
+ffb6c1		LightPink
+db7093		pale violet red
+db7093		PaleVioletRed
+b03060		maroon
+c71585		medium violet red
+c71585		MediumVioletRed
+d02090		violet red
+d02090		VioletRed
+ff00ff		magenta
+ee82ee		violet
+dda0dd		plum
+da70d6		orchid
+ba55d3		medium orchid
+ba55d3		MediumOrchid
+9932cc		dark orchid
+9932cc		DarkOrchid
+9400d3		dark violet
+9400d3		DarkViolet
+8a2be2		blue violet
+8a2be2		BlueViolet
+a020f0		purple
+9370db		medium purple
+9370db		MediumPurple
+d8bfd8		thistle
+fffafa		snow01
+eee9e9		snow02
+cdc9c9		snow03
+8b8989		snow04
+fff5ee		seashell01
+eee5de		seashell02
+cdc5bf		seashell03
+8b8682		seashell04
+ffefdb		AntiqueWhite01
+eedfcc		AntiqueWhite02
+cdc0b0		AntiqueWhite03
+8b8378		AntiqueWhite04
+ffe4c4		bisque01
+eed5b7		bisque02
+cdb79e		bisque03
+8b7d6b		bisque04
+ffdab9		PeachPuff01
+eecbad		PeachPuff02
+cdaf95		PeachPuff03
+8b7765		PeachPuff04
+ffdead		NavajoWhite01
+eecfa1		NavajoWhite02
+cdb38b		NavajoWhite03
+8b79    5e		NavajoWhite04
+fffacd		LemonChiffon01
+eee9bf		LemonChiffon02
+cdc9a5		LemonChiffon03
+8b8970		LemonChiffon04
+fff8dc		cornsilk01
+eee8cd		cornsilk02
+cdc8b1		cornsilk03
+8b8878		cornsilk04
+fffff0		ivory01
+eeeee0		ivory02
+cdcdc1		ivory03
+8b8b83		ivory04
+f0fff0		honeydew01
+e0eee0		honeydew02
+c1cdc1		honeydew03
+838b83		honeydew04
+fff0f5		LavenderBlush01
+eee0e5		LavenderBlush02
+cdc1c5		LavenderBlush03
+8b8386		LavenderBlush04
+ffe4e1		MistyRose01
+eed5d2		MistyRose02
+cdb7b5		MistyRose03
+8b7d7b		MistyRose04
+f0ffff		azure01
+e0eeee		azure02
+c1cdcd		azure03
+838b8b		azure04
+836fff		SlateBlue01
+7a67ee		SlateBlue02
+6959cd		SlateBlue03
+473c8b		SlateBlue04
+4876ff		RoyalBlue01
+436eee		RoyalBlue02
+3a5fcd		RoyalBlue03
+27408b		RoyalBlue04
+0000ff		blue01
+0000ee		blue02
+0000cd		blue03
+00008b		blue04
+1e90ff		DodgerBlue01
+1c86ee		DodgerBlue02
+1874cd		DodgerBlue03
+104e8b		DodgerBlue04
+63b8ff		SteelBlue01
+5cacee		SteelBlue02
+4f94cd		SteelBlue03
+36648b		SteelBlue04
+00bfff		DeepSkyBlue01
+00b2ee		DeepSkyBlue02
+009acd		DeepSkyBlue03
+00688b		DeepSkyBlue04
+87ceff		SkyBlue01
+7ec0ee		SkyBlue02
+6ca6cd		SkyBlue03
+4a708b		SkyBlue04
+b0e2ff		LightSkyBlue01
+a4d3ee		LightSkyBlue02
+8db6cd		LightSkyBlue03
+607b8b		LightSkyBlue04
+c6e2ff		SlateGray01
+b9d3ee		SlateGray02
+9fb6cd		SlateGray03
+6c7b8b		SlateGray04
+cae1ff		LightSteelBlue01
+bcd2ee		LightSteelBlue02
+a2b5cd		LightSteelBlue03
+6e7b8b		LightSteelBlue04
+bfefff		LightBlue01
+b2dfee		LightBlue02
+9ac0cd		LightBlue03
+68838b		LightBlue04
+e0ffff		LightCyan01
+d1eeee		LightCyan02
+b4cdcd		LightCyan03
+7a8b8b		LightCyan04
+bbffff		PaleTurquoise01
+aeeeee		PaleTurquoise02
+96cdcd		PaleTurquoise03
+668b8b		PaleTurquoise04
+98f5ff		CadetBlue01
+8ee5ee		CadetBlue02
+7ac5cd		CadetBlue03
+53868b		CadetBlue04
+00f5ff		turquoise01
+00e5ee		turquoise02
+00c5cd		turquoise03
+00868b		turquoise04
+00ffff		cyan01
+00eeee		cyan02
+00cdcd		cyan03
+008b8b		cyan04
+97ffff		DarkSlateGray01
+8deeee		DarkSlateGray02
+79cdcd		DarkSlateGray03
+528b8b		DarkSlateGray04
+7fffd4		aquamarine01
+76eec6		aquamarine02
+66cdaa		aquamarine03
+458b74		aquamarine04
+c1ffc1		DarkSeaGreen01
+b4eeb4		DarkSeaGreen02
+9bcd9b		DarkSeaGreen03
+698b69		DarkSeaGreen04
+54ff9f		SeaGreen01
+4eee94		SeaGreen02
+43cd80		SeaGreen03
+2e8b    57		SeaGreen04
+9aff9a		PaleGreen01
+90ee90		PaleGreen02
+7ccd7c		PaleGreen03
+548b    54		PaleGreen04
+00ff7f		SpringGreen01
+00ee76		SpringGreen02
+00cd66		SpringGreen03
+008b    45		SpringGreen04
+00ff    00		green01
+00ee    00		green02
+00cd    00		green03
+008b    00		green04
+7fff    00		chartreuse01
+76ee    00		chartreuse02
+66cd    00		chartreuse03
+458b    00		chartreuse04
+c0ff    3e		OliveDrab01
+b3ee    3a		OliveDrab02
+9acd    32		OliveDrab03
+698b    22		OliveDrab04
+caff70		DarkOliveGreen01
+bcee68		DarkOliveGreen02
+a2cd    5a		DarkOliveGreen03
+6e8b    3d		DarkOliveGreen04
+fff68f		khaki01
+eee685		khaki02
+cdc673		khaki03
+8b86    4e		khaki04
+ffec8b		LightGoldenrod01
+eedc82		LightGoldenrod02
+cdbe70		LightGoldenrod03
+8b81    4c		LightGoldenrod04
+ffffe0		LightYellow01
+eeeed1		LightYellow02
+cdcdb4		LightYellow03
+8b8b7a		LightYellow04
+ffff    00		yellow01
+eeee    00		yellow02
+cdcd    00		yellow03
+8b8b    00		yellow04
+ffd7    00		gold01
+eec9    00		gold02
+cdad    00		gold03
+8b75    00		gold04
+ffc1    25		goldenrod01
+eeb4    22		goldenrod02
+cd9b    1d		goldenrod03
+8b69    14		goldenrod04
+ffb9    0f		DarkGoldenrod01
+eead    0e		DarkGoldenrod02
+cd95    0c		DarkGoldenrod03
+8b65    08		DarkGoldenrod04
+ffc1c1		RosyBrown01
+eeb4b4		RosyBrown02
+cd9b9b		RosyBrown03
+8b6969		RosyBrown04
+ff6a6a		IndianRed01
+ee63    63		IndianRed02
+cd55    55		IndianRed03
+8b3a    3a		IndianRed04
+ff82    47		sienna01
+ee79    42		sienna02
+cd68    39		sienna03
+8b47    26		sienna04
+ffd39b		burlywood01
+eec591		burlywood02
+cdaa7d		burlywood03
+8b73    55		burlywood04
+ffe7ba		wheat01
+eed8ae		wheat02
+cdba96		wheat03
+8b7e66		wheat04
+ffa5    4f		tan01
+ee9a    49		tan02
+cd85    3f		tan03
+8b5a    2b		tan04
+ff7f    24		chocolate01
+ee76    21		chocolate02
+cd66    1d		chocolate03
+8b45    13		chocolate04
+ff30    30		firebrick01
+ee2c    2c		firebrick02
+cd26    26		firebrick03
+8b1a    1a		firebrick04
+ff40    40		brown01
+ee3b    3b		brown02
+cd33    33		brown03
+8b23    23		brown04
+ff8c69		salmon01
+ee82    62		salmon02
+cd70    54		salmon03
+8b4c    39		salmon04
+ffa07a		LightSalmon01
+ee9572		LightSalmon02
+cd81    62		LightSalmon03
+8b57    42		LightSalmon04
+ffa5    00		orange01
+ee9a    00		orange02
+cd85    00		orange03
+8b5a    00		orange04
+ff7f    00		DarkOrange01
+ee76    00		DarkOrange02
+cd66    00		DarkOrange03
+8b45    00		DarkOrange04
+ff72    56		coral01
+ee6a    50		coral02
+cd5b    45		coral03
+8b3e    2f		coral04
+ff63    47		tomato01
+ee5c    42		tomato02
+cd4f    39		tomato03
+8b36    26		tomato04
+ff45    00		OrangeRed01
+ee40    00		OrangeRed02
+cd37    00		OrangeRed03
+8b25    00		OrangeRed04
+ff00    00		red01
+ee00    00		red02
+cd00    00		red03
+8b00    00		red04
+ff1493		DeepPink01
+ee1289		DeepPink02
+cd1076		DeepPink03
+8b0a    50		DeepPink04
+ff6eb4		HotPink01
+ee6aa7		HotPink02
+cd6090		HotPink03
+8b3a62		HotPink04
+ffb5c5		pink01
+eea9b8		pink02
+cd919e		pink03
+8b636c		pink04
+ffaeb9		LightPink01
+eea2ad		LightPink02
+cd8c95		LightPink03
+8b5f65		LightPink04
+ff82ab		PaleVioletRed01
+ee799f		PaleVioletRed02
+cd6889		PaleVioletRed03
+8b47    5d		PaleVioletRed04
+ff34b3		maroon01
+ee30a7		maroon02
+cd2990		maroon03
+8b1c    62		maroon04
+ff3e96		VioletRed01
+ee3a8c		VioletRed02
+cd3278		VioletRed03
+8b22    52		VioletRed04
+ff00ff		magenta01
+ee00ee		magenta02
+cd00cd		magenta03
+8b008b		magenta04
+ff83fa		orchid01
+ee7ae9		orchid02
+cd69c9		orchid03
+8b4789		orchid04
+ffbbff		plum01
+eeaeee		plum02
+cd96cd		plum03
+8b668b		plum04
+e066ff		MediumOrchid01
+d15fee		MediumOrchid02
+b452cd		MediumOrchid03
+7a378b		MediumOrchid04
+bf3eff		DarkOrchid01
+b23aee		DarkOrchid02
+9a32cd		DarkOrchid03
+68228b		DarkOrchid04
+9b30ff		purple01
+912cee		purple02
+7d26cd		purple03
+551a8b		purple04
+ab82ff		MediumPurple01
+9f79ee		MediumPurple02
+8968cd		MediumPurple03
+5d478b		MediumPurple04
+ffe1ff		thistle01
+eed2ee		thistle02
+cdb5cd		thistle03
+8b7b8b		thistle04
+000000		gray00
+000000		grey00
+030303		gray01
+030303		grey01
+050505		gray02
+050505		grey02
+080808		gray03
+080808		grey03
+0a0a0a		gray04
+0a0a0a		grey04
+0d0d0d		gray05
+0d0d0d		grey05
+0f0f0f		gray06
+0f0f0f		grey06
+121212		gray07
+121212		grey07
+141414		gray08
+141414		grey08
+171717		gray09
+171717		grey09
+1a1a1a		gray0a
+1a1a1a		grey0a
+1c1c1c		gray0b
+1c1c1c		grey0b
+1f1f1f		gray0c
+1f1f1f		grey0c
+212121		gray0d
+212121		grey0d
+242424		gray0e
+242424		grey0e
+262626		gray0f
+262626		grey0f
+292929		gray10
+292929		grey10
+2b2b2b		gray11
+2b2b2b		grey11
+2e2e2e		gray12
+2e2e2e		grey12
+303030		gray13
+303030		grey13
+333333		gray14
+333333		grey14
+363636		gray15
+363636		grey15
+383838		gray16
+383838		grey16
+3b3b3b		gray17
+3b3b3b		grey17
+3d3d3d		gray18
+3d3d3d		grey18
+404040		gray19
+404040		grey19
+424242		gray1a
+424242		grey1a
+454545		gray1b
+454545		grey1b
+474747		gray1c
+474747		grey1c
+4a4a4a		gray1d
+4a4a4a		grey1d
+4d4d4d		gray1e
+4d4d4d		grey1e
+4f4f4f		gray1f
+4f4f4f		grey1f
+525252		gray20
+525252		grey20
+545454		gray21
+545454		grey21
+575757		gray22
+575757		grey22
+595959		gray23
+595959		grey23
+5c5c5c		gray24
+5c5c5c		grey24
+5e5e5e		gray25
+5e5e5e		grey25
+616161		gray26
+616161		grey26
+636363		gray27
+636363		grey27
+666666		gray28
+666666		grey28
+696969		gray29
+696969		grey29
+6b6b6b		gray2a
+6b6b6b		grey2a
+6e6e6e		gray2b
+6e6e6e		grey2b
+707070		gray2c
+707070		grey2c
+737373		gray2d
+737373		grey2d
+757575		gray2e
+757575		grey2e
+787878		gray2f
+787878		grey2f
+7a7a7a		gray30
+7a7a7a		grey30
+7d7d7d		gray31
+7d7d7d		grey31
+7f7f7f		gray32
+7f7f7f		grey32
+828282		gray33
+828282		grey33
+858585		gray34
+858585		grey34
+878787		gray35
+878787		grey35
+8a8a8a		gray36
+8a8a8a		grey36
+8c8c8c		gray37
+8c8c8c		grey37
+8f8f8f		gray38
+8f8f8f		grey38
+919191		gray39
+919191		grey39
+949494		gray3a
+949494		grey3a
+969696		gray3b
+969696		grey3b
+999999		gray3c
+999999		grey3c
+9c9c9c		gray3d
+9c9c9c		grey3d
+9e9e9e		gray3e
+9e9e9e		grey3e
+a1a1a1		gray3f
+a1a1a1		grey3f
+a3a3a3		gray40
+a3a3a3		grey40
+a6a6a6		gray41
+a6a6a6		grey41
+a8a8a8		gray42
+a8a8a8		grey42
+ababab		gray43
+ababab		grey43
+adadad		gray44
+adadad		grey44
+b0b0b0		gray45
+b0b0b0		grey45
+b3b3b3		gray46
+b3b3b3		grey46
+b5b5b5		gray47
+b5b5b5		grey47
+b8b8b8		gray48
+b8b8b8		grey48
+bababa		gray49
+bababa		grey49
+bdbdbd		gray4a
+bdbdbd		grey4a
+bfbfbf		gray4b
+bfbfbf		grey4b
+c2c2c2		gray4c
+c2c2c2		grey4c
+c4c4c4		gray4d
+c4c4c4		grey4d
+c7c7c7		gray4e
+c7c7c7		grey4e
+c9c9c9		gray4f
+c9c9c9		grey4f
+cccccc		gray50
+cccccc		grey50
+cfcfcf		gray51
+cfcfcf		grey51
+d1d1d1		gray52
+d1d1d1		grey52
+d4d4d4		gray53
+d4d4d4		grey53
+d6d6d6		gray54
+d6d6d6		grey54
+d9d9d9		gray55
+d9d9d9		grey55
+dbdbdb		gray56
+dbdbdb		grey56
+dedede		gray57
+dedede		grey57
+e0e0e0		gray58
+e0e0e0		grey58
+e3e3e3		gray59
+e3e3e3		grey59
+e5e5e5		gray5a
+e5e5e5		grey5a
+e8e8e8		gray5b
+e8e8e8		grey5b
+ebebeb		gray5c
+ebebeb		grey5c
+ededed		gray5d
+ededed		grey5d
+f0f0f0		gray5e
+f0f0f0		grey5e
+f2f2f2		gray5f
+f2f2f2		grey5f
+f5f5f5		gray60
+f5f5f5		grey60
+f7f7f7		gray61
+f7f7f7		grey61
+fafafa		gray62
+fafafa		grey62
+fcfcfc		gray63
+fcfcfc		grey63
+ffffff		gray64
+ffffff		grey64
+a9a9a9		dark grey
+a9a9a9		DarkGrey
+a9a9a9		dark gray
+a9a9a9		DarkGray
+00008b		dark blue
+00008b		DarkBlue
+008b8b		dark cyan
+008b8b		DarkCyan
+8b008b		dark magenta
+8b008b		DarkMagenta
+8b0000		dark red
+8b0000		DarkRed
+90ee90		light green
+90ee90		LightGreen
