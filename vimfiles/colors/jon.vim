@@ -47,7 +47,7 @@ hi IncSearch      guibg=#ffff00 ctermbg=011 guifg=#000000 ctermfg=000
 hi StatusLine     guibg=#000000 ctermbg=000 guifg=#4e4e4e ctermfg=239 gui=bold      cterm=bold
 " StatusLineNC    status lines of not-current windows
 "                 Note\: if this is equal to \"StatusLine\" Vim will use \"^^^\" in the status line of the current window.
-hi StatusLineNC   guibg=#000000 ctermbg=000 guifg=#eeeeee ctermfg=255 gui=italic    cterm=italic
+hi StatusLineNC   guibg=#000000 ctermbg=000 guifg=#eeeeee ctermfg=255 gui=italic
 
 " WarningMsg      warning messages
 hi clear WarningMsg
@@ -75,7 +75,7 @@ hi FoldColumn     guibg=#767676 ctermbg=243 guifg=#000000 ctermfg=000
 " ...................................................................
 
 " *Comment        any comment
-hi Comment                                  guifg=#808080 ctermfg=244 gui=italic    cterm=italic
+hi Comment                                  guifg=#808080 ctermfg=244 gui=italic
 
 " *Constant       any constant
 "  String         a string constant: \"this is a string\"
@@ -140,7 +140,7 @@ hi Special                                  guifg=#bcbcbc ctermfg=250
 hi SpecialChar                              guifg=#bcbcbc ctermfg=250
 hi Tag                                      guifg=#bcbcbc ctermfg=250
 hi Delimiter                                guifg=#bcbcbc ctermfg=250
-hi SpecialComment                           guifg=#bcbcbc ctermfg=250 gui=italic    cterm=italic
+hi SpecialComment                           guifg=#bcbcbc ctermfg=250 gui=italic
 hi Debug                                    guifg=#bcbcbc ctermfg=250
 
 " *Underlined     text that stands out, HTML links
