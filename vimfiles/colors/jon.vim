@@ -1,3 +1,6 @@
+" NOTE: Optimized for Windows GVim or Vim in xterm-256color terminals
+"       e.g., looks bad in xterm terminals
+
 set background=dark
 hi clear
 if exists("syntax_on")
@@ -10,15 +13,17 @@ let g:colors_name = "jon"
 " ...................................................................
 " Normal          normal text
 hi Normal         guibg=#1c1c1c ctermbg=234 guifg=#eeeeee ctermfg=255
-" NonText         '~' and '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in
-"                 the text (e.g., '>' displayed when a double-wide character doesn't fit at the end of the line).
+" NonText         '~' and '@' at the end of the window, characters from 'showbreak' and other characters
+"                 that do not really exist in the text (e.g., '>' displayed when a double-wide character
+"                 doesn't fit at the end of the line).
 hi NonText        guibg=#000000 ctermbg=000 guifg=#4e4e4e ctermfg=239
-" LineNr          Line number for \":number\" and \":#\" commands, and when 'number' or 'relativenumber' option is set.
+" LineNr          Line number for \":number\" and \":#\" commands, and when 'number' or 'relativenumber'
+"                 option is set.
 hi LineNr         guibg=#000000 ctermbg=000 guifg=#4e4e4e ctermfg=239
 
 " Cursor          the character under the cursor
 hi Cursor         guibg=#ffffff ctermbg=015 guifg=#000000 ctermfg=000
-" CursorIM        like Cursor, but used when in IME mode |CursorIM|
+" CursorIM        like Cursor, but used when in IME mode
 hi CursorIM       guibg=#ffffff ctermbg=015 guifg=#000000 ctermfg=000
 " CursorLine      the screen line that the cursor is in when 'cursorline' is set
 hi CursorLine     guibg=#121212 ctermbg=233
@@ -39,15 +44,17 @@ hi ModeMsg                                  guifg=#ffff00 ctermfg=011
 hi MoreMsg                                  guifg=#ffff00 ctermfg=011
 
 " Search          Last search pattern highlighting (see 'hlsearch').
-"                 Also used for highlighting the current line in the quickfix window and similar items that need to stand out.
+"                 Also used for highlighting the current line in the quickfix window and similar items
+"                 that need to stand out.
 hi Search         guibg=#ffaf00 ctermbg=214 guifg=#000000 ctermfg=000
 " IncSearch       'incsearch' highlighting; also used for the text replaced with \":s///c\"
 hi IncSearch      guibg=#ffff00 ctermbg=011 guifg=#000000 ctermfg=000
 " StatusLine      status line of current window
 hi StatusLine     guibg=#000000 ctermbg=000 guifg=#4e4e4e ctermfg=239 gui=bold      cterm=bold
 " StatusLineNC    status lines of not-current windows
-"                 Note\: if this is equal to \"StatusLine\" Vim will use \"^^^\" in the status line of the current window.
-hi StatusLineNC   guibg=#000000 ctermbg=000 guifg=#eeeeee ctermfg=255 gui=italic
+"                 Note\: if this is equal to \"StatusLine\" Vim will use \"^^^\" in the status line of
+"                 the current window.
+hi StatusLineNC   guibg=#000000 ctermbg=000 guifg=#eeeeee ctermfg=255 gui=italic    cterm=italic
 
 " WarningMsg      warning messages
 hi clear WarningMsg
@@ -56,10 +63,10 @@ hi WarningMsg                               guifg=#dfaf00 ctermfg=178
 hi clear ErrorMsg
 hi ErrorMsg                                 guifg=#d70000 ctermfg=160 gui=bold      cterm=bold
 
-" DiffAdd         diff mode: Added line |diff.txt|
-" DiffChange      diff mode: Changed line |diff.txt|
-" DiffDelete      diff mode: Deleted line |diff.txt|
-" DiffText        diff mode: Changed text within a changed line |diff.txt|
+" DiffAdd         diff mode: Added line
+" DiffChange      diff mode: Changed line
+" DiffDelete      diff mode: Deleted line
+" DiffText        diff mode: Changed text within a changed line
 hi DiffAdd        guibg=#5f5fd7 ctermbg=062 guifg=#000000 ctermfg=000
 hi DiffChange     guibg=#005f00 ctermbg=022 guifg=#000000 ctermfg=000
 hi DiffDelete     guibg=#ff875f ctermbg=209 guifg=#000000 ctermfg=000
@@ -75,7 +82,7 @@ hi FoldColumn     guibg=#767676 ctermbg=243 guifg=#000000 ctermfg=000
 " ...................................................................
 
 " *Comment        any comment
-hi Comment                                  guifg=#808080 ctermfg=244 gui=italic
+hi Comment                                  guifg=#808080 ctermfg=244 gui=italic    cterm=italic
 
 " *Constant       any constant
 "  String         a string constant: \"this is a string\"
@@ -140,13 +147,13 @@ hi Special                                  guifg=#bcbcbc ctermfg=250
 hi SpecialChar                              guifg=#bcbcbc ctermfg=250
 hi Tag                                      guifg=#bcbcbc ctermfg=250
 hi Delimiter                                guifg=#bcbcbc ctermfg=250
-hi SpecialComment                           guifg=#bcbcbc ctermfg=250 gui=italic
+hi SpecialComment                           guifg=#bcbcbc ctermfg=250 gui=italic    cterm=italic
 hi Debug                                    guifg=#bcbcbc ctermfg=250
 
 " *Underlined     text that stands out, HTML links
 hi Underlined                                                         gui=underline cterm=underline
 
-" *Ignore         left blank, hidden  |hl-Ignore|
+" *Ignore         left blank, hidden
 
 " *Error          any erroneous construct
 hi Error          guibg=#000000 ctermbg=000 guifg=#ff0000 ctermfg=009 gui=undercurl cterm=underline
@@ -158,7 +165,8 @@ hi Todo           guibg=#005f5f ctermbg=023 guifg=#ffffff ctermfg=015 gui=bold  
 " Directory       directory names (and other special names in listings)
 " VertSplit       the column separating vertically split windows
 " SignColumn      column where |signs| are displayed
-" MatchParen      The character under the cursor or just before it, if it is a paired bracket, and its match. |pi_paren.txt|
+" MatchParen      The character under the cursor or just before it, if it is a paired bracket, and its
+"                 match.
 
 " Pmenu           Popup menu: normal item.
 " PmenuSel        Popup menu: selected item.
@@ -166,18 +174,19 @@ hi Todo           guibg=#005f5f ctermbg=023 guifg=#ffffff ctermfg=015 gui=bold  
 " PmenuThumb      Popup menu: Thumb of the scrollbar.
 " WildMenu        current match in 'wildmenu' completion
 
-" Question        |hit-enter| prompt and yes/no questions
+" Question        prompt and yes/no questions
 
-" SpecialKey      Meta and special keys listed with \":map\", also for text used to show unprintable characters in the text, 'listchars'.
+" SpecialKey      Meta and special keys listed with \":map\", also for text used to show unprintable
+"                 characters in the text, 'listchars'.
 "                 Generally\: text that is displayed differently from what it really is.
 
-" SpellBad        Word that is not recognized by the spellchecker. |spell|
+" SpellBad        Word that is not recognized by the spellchecker.
 "                 This will be combined with the highlighting used otherwise.
-" SpellCap        Word that should start with a capital. |spell|
+" SpellCap        Word that should start with a capital.
 "                 This will be combined with the highlighting used otherwise.
-" SpellLocal      Word that is recognized by the spellchecker as one that is used in another region. |spell|
+" SpellLocal      Word that is recognized by the spellchecker as one that is used in another region.
 "                 This will be combined with the highlighting used otherwise.
-" SpellRare       Word that is recognized by the spellchecker as one that is hardly ever used. |spell|
+" SpellRare       Word that is recognized by the spellchecker as one that is hardly ever used.
 "                 This will be combined with the highlighting used otherwise.
 
 " TabLine         tab pages line, not active tab page label
