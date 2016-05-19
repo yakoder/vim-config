@@ -13,10 +13,10 @@ set nofoldenable    " disable folding
 set history=1000
 
 " Backup filename pattern
-set bex=.vim
+set bex=.vim~
 " do before write to get latest timestamp value
 " note: do _not_ append &bex!!!
-au BufWritePre * let &bex = '.~' . strftime("%Y%m%d%H%M%S") . '.vim'
+au BufWritePre * let &bex = '.~' . strftime("%Y%m%d%H%M%S") . '.vim~'
 
 set mps+=<:>
 
