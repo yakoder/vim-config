@@ -9,11 +9,12 @@ set tabstop=4
 set nu              " show line numbers
 set updatecount=0   " disable swapfile
 set nofoldenable    " disable folding
+set cursorcolumn    " show current column
 
 set history=1000
 
-" Backup filename pattern
-set bex=.vim~
+set backupcopy=yes
+set backupext=.vim~ " aka: bex
 " do before write to get latest timestamp value
 " note: do _not_ append &bex!!!
 au BufWritePre * let &bex = '.~' . strftime("%Y%m%d%H%M%S") . '.vim~'
