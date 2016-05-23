@@ -26,7 +26,7 @@ hi Cursor         guibg=#ffffff ctermbg=015 guifg=#000000 ctermfg=000
 " CursorIM        like Cursor, but used when in IME mode
 hi CursorIM       guibg=#ffffff ctermbg=015 guifg=#000000 ctermfg=000
 " CursorLine      the screen line that the cursor is in when 'cursorline' is set
-hi CursorLine     guibg=#121212 ctermbg=233
+hi CursorLine     guibg=#121212 ctermbg=233                           gui=NONE      cterm=NONE
 " CursorColumn    the screen column that the cursor is in when 'cursorcolumn' is set
 hi CursorColumn   guibg=#121212 ctermbg=233
 " ColorColumn     used for the columns set with 'colorcolumn'
