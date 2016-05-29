@@ -77,7 +77,7 @@ if has("autocmd")
 
     " do before write to get latest timestamp value
     " note: do _not_ append &bex!!!
-    au BufWritePre * let &bex = '.~' . strftime("%Y%m%d%H%M%S") . '.vim~'
+    au BufWritePre * let &bex = '.' . strftime("%Y%m%d%H%M%S") . '.vim~'
   augroup END
 
   augroup localViminfo
