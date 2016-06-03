@@ -127,8 +127,8 @@ endif
 set autoindent                    " always set autoindenting on
 set smartindent                   " enable smartindenting as well
 set expandtab                     " Die, evil tab characters! Die!
-set shiftwidth=2
-set tabstop=2
+set shiftwidth=4
+set tabstop=4
 
 set nu                            " show line numbers
 set updatecount=0                 " disable swapfile
