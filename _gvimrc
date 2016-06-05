@@ -3,8 +3,8 @@ set printfont=Consolas:h9
 "set printoptions=syntax:y,left:18pt,right:18pt,top:32pt,bottom:32pt,number:y
 set printoptions=left:18pt,right:18pt,top:25pt,bottom:25pt,header:2,syntax:y,number:y,wrap:y,duplex:off,collate:y,jobsplit:n,portrait:y,paper:letter,formfeed:n
 
-set lines=45
-set columns=110
+set columns=120
+set lines=40
 
 set ch=2		" Make command line two lines high
 set mousehide		" Hide the mouse when typing text
