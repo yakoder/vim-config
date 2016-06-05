@@ -11,8 +11,9 @@ My vim config files
   + put in main install location, e.g., "C:\Program Files (x86)\Vim"
 - [`vimfiles`](vimfiles) Windows-based directory for additional files
   + put in main install location, e.g., "C:\Program Files (x86)\Vim"
-- [`.vim`](.vim) Unix-based directory for additional files (symlinked to `vimfiles`)
-  + put in user home directory
+  + contains my custom themes
+- [`.vim`](vimfiles) Unix-based directory for additional files (symlinked to `vimfiles`)
+  + put files (not symlink) in `.vim` folder under user home directory
 - [`vm.sh`](vm.sh) Bash script for cleaning up the backup files, if desired
   + put in user home bin directory (or whereever that's on the path)
 
