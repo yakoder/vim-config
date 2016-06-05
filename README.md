@@ -1,6 +1,7 @@
 # vim-config
 My vim config files
 
+## Files
 - [`.vimrc`](.vimrc) Unix-based Vim config
   + put in user home directory
 - [`_vimrc`](_vimrc) Unix-based Vim config (hard-linked to `.vimrc`)
