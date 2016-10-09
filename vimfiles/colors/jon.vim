@@ -46,9 +46,11 @@ hi MoreMsg                                  guifg=#ffff00 ctermfg=011
 " Search          Last search pattern highlighting (see 'hlsearch').
 "                 Also used for highlighting the current line in the quickfix window and similar items
 "                 that need to stand out.
-hi Search         guibg=#ffaf00 ctermbg=214 guifg=#000000 ctermfg=000
+hi clear Search
+hi Search                                   guifg=#875fff ctermfg=099 gui=standout
 " IncSearch       'incsearch' highlighting; also used for the text replaced with \":s///c\"
-hi IncSearch      guibg=#ffff00 ctermbg=011 guifg=#000000 ctermfg=000
+hi clear IncSearch
+hi IncSearch                                guifg=#875fff ctermfg=099 gui=underline
 " StatusLine      status line of current window
 hi StatusLine     guibg=#000000 ctermbg=000 guifg=#4e4e4e ctermfg=239 gui=bold      cterm=bold
 " StatusLineNC    status lines of not-current windows
