@@ -1,4 +1,7 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
+
+# update if system is different
+binpath=/usr/bin
 
 vimbaks=*.vim~
 dotfiles=.${vimbaks}
@@ -29,22 +32,22 @@ elif [ "$args" == "-rl" ] || [ "$args" == "-lr" ]; then
 # listing current-only 
 elif [ "$args" == "-l" ]; then
   for f in ${dotfiles}; do
-    [ -e "$f" ] && /usr/bin/ls ${dotfiles}
+    [ -e "$f" ] && ${binpath}/ls ${dotfiles}
     break
   done
   for f in ${vimbaks}; do
-    [ -e "$f" ] && /usr/bin/ls ${vimbaks}
+    [ -e "$f" ] && ${binpath}/ls ${vimbaks}
     break
   done
 
 # interactive or forced removal current-only 
 elif [ "$args" == "-i" ] || [ "$args" == "-f" ]; then
   for f in ${dotfiles}; do
-    [ -e "$f" ] && /usr/bin/rm ${args} ${dotfiles}
+    [ -e "$f" ] && ${binpath}/rm ${args} ${dotfiles}
     break
   done
   for f in ${vimbaks}; do
-    [ -e "$f" ] && /usr/bin/rm ${args} ${vimbaks}
+    [ -e "$f" ] && ${binpath}/rm ${args} ${vimbaks}
     break
   done
 

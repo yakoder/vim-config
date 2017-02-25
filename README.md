@@ -17,4 +17,5 @@ My vim config files
   + put files (not symlink) in `.vim` folder under user home directory
 - [`vm.sh`](vm.sh) Bash script for cleaning up the backup files, if desired
   + put in user home bin directory (or whereever that's on the path)
+  + Note: This currently does not handle paths that contain spaces. I'll try to fix when I have time.
 
