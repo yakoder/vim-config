@@ -141,10 +141,10 @@ set cursorcolumn                  " show current column
 
 " Load custom colorscheme, defaulting to something close
 try
-  "colorscheme one-dark            " get from https://github.com/patrickw276/one-dark.vim
   colorscheme jon
-  set background=dark             " dark background, please
 catch /^Vim\%((\a\+)\)\=:E185/
   colorscheme ron
 endtry
+
+set background=dark             " making sure it's a dark background
 
