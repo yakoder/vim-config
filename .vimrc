@@ -143,7 +143,6 @@ set cursorcolumn                  " show current column
 try
   "colorscheme one-dark            " get from https://github.com/patrickw276/one-dark.vim
   colorscheme jon
-  "colorscheme jon2               " version w/o cterm=italic
   set background=dark             " dark background, please
 catch /^Vim\%((\a\+)\)\=:E185/
   colorscheme ron
