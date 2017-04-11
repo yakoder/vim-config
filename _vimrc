@@ -142,16 +142,9 @@ set cursorcolumn                  " show current column
 " Load custom colorscheme, defaulting to something close
 try
   colorscheme jon
-<<<<<<< HEAD
-=======
-  "colorscheme jon2               " version w/o cterm=italic
->>>>>>> 8fe8a4205e72a39a52f9213ff02cab475de177ef
 catch /^Vim\%((\a\+)\)\=:E185/
   colorscheme ron
 endtry
 
-<<<<<<< HEAD
 set background=dark             " making sure it's a dark background
 
-=======
->>>>>>> 8fe8a4205e72a39a52f9213ff02cab475de177ef
