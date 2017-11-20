@@ -52,7 +52,8 @@ hi Normal         guibg=#1c1c1c ctermbg=234 guifg=#afafd7 ctermfg=146
 " NonText         '~' and '@' at the end of the window, characters from 'showbreak' and other characters
 "                 that do not really exist in the text (e.g., '>' displayed when a double-wide character
 "                 doesn't fit at the end of the line).
-hi NonText        guibg=#000000 ctermbg=000 guifg=#1c1c1c ctermfg=234
+"hi NonText        guibg=#000000 ctermbg=000 guifg=#1c1c1c ctermfg=234
+hi NonText        guibg=#1c1c1c ctermbg=234 guifg=#afafd7 ctermfg=146
 " LineNr          Line number for \":number\" and \":#\" commands, and when 'number' or 'relativenumber'
 "                 option is set.
 hi LineNr         guibg=#000000 ctermbg=000 guifg=#4e4e4e ctermfg=239
