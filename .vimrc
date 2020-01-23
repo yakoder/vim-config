@@ -139,12 +139,19 @@ set mps+=<:>                      " add angle brakets to make html & xml easier 
 set cursorline                    " turn on highlighting the cursor line
 set cursorcolumn                  " show current column
 
+let do_syntax_sel_menu=1
+
 " Load custom colorscheme, defaulting to something close
-try
-  colorscheme jon
-catch /^Vim\%((\a\+)\)\=:E185/
-  colorscheme ron
-endtry
+"try
+"  colorscheme jon
+"catch /^Vim\%((\a\+)\)\=:E185/
+"  colorscheme ron
+"endtry
+"colorscheme elflord
+"colorscheme slate
+"colorscheme desert
+"colorscheme murphy
+colorscheme torte
 
 set background=dark             " making sure it's a dark background
 
