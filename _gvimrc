@@ -1,5 +1,6 @@
 "set guifont=Consolas:h9
-set guifont=Consolas:h8
+"set guifont=Consolas:h8
+set guifont=Consolas:h10
 "set printfont=Consolas:h9
 set printfont=Consolas:h8
 "set printoptions=syntax:y,left:18pt,right:18pt,top:32pt,bottom:32pt,number:y
