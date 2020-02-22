@@ -40,6 +40,7 @@ endfunction
 
 set history=1000                " default was 200
 set noincsearch                 " default was enabled
+let g:netrw_dirhistmax=0
 
 if has("autocmd")
 
@@ -83,8 +84,7 @@ endif " has("autocmd")
 " Override whatever came from filetype indent files
 set autoindent                    " always set autoindenting on
 set smartindent                   " enable smartindenting as well
-"set expandtab                     " Die, evil tab characters! Die!
-set noet " tmp allowing 
+set expandtab                     " Die, evil tab characters! Die!
 set shiftwidth=4
 set tabstop=4
 set noundofile                    " get rid of the annoying .un~ files cluttering up the place
