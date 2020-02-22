@@ -47,11 +47,8 @@ if exist "%USERPROFILE%\vimfiles"                 rd /q     "%USERPROFILE%\vimfi
 
 @echo Creating links...
 if exist "%VIMCONFIG%\_gvimrc"  mklink    "%CYGWINPATH%\home\%USERNAME%\.gvimrc"  "%VIMCONFIG%\_gvimrc"
-if exist "%VIMCONFIG%\_gvimrc"  mklink    "%CYGWINPATH%\home\%USERNAME%\_gvimrc"  "%VIMCONFIG%\_gvimrc"
 if exist "%VIMCONFIG%\_vimrc"   mklink    "%CYGWINPATH%\home\%USERNAME%\.vimrc"   "%VIMCONFIG%\_vimrc"
-if exist "%VIMCONFIG%\_vimrc"   mklink    "%CYGWINPATH%\home\%USERNAME%\_vimrc"   "%VIMCONFIG%\_vimrc"
 if exist "%VIMCONFIG%\_viminfo" mklink /h "%CYGWINPATH%\home\%USERNAME%\.viminfo" "%VIMCONFIG%\_viminfo"
-if exist "%VIMCONFIG%\_viminfo" mklink /h "%CYGWINPATH%\home\%USERNAME%\_viminfo" "%VIMCONFIG%\_viminfo"
 if exist "%VIMCONFIG%\vimfiles" mklink /d "%CYGWINPATH%\home\%USERNAME%\.vim"     "%VIMCONFIG%\vimfiles"
 
 if exist "%VIMCONFIG%\_gvimrc"  mklink    "%VIMINSTALL%\.gvimrc"  "%VIMCONFIG%\_gvimrc"
@@ -60,11 +57,8 @@ if exist "%VIMCONFIG%\_vimrc"   mklink    "%VIMINSTALL%\.vimrc"   "%VIMCONFIG%\_
 if exist "%VIMCONFIG%\_vimrc"   mklink    "%VIMINSTALL%\_vimrc"   "%VIMCONFIG%\_vimrc"
 if exist "%VIMCONFIG%\vimfiles" mklink /d "%VIMINSTALL%\vimfiles" "%VIMCONFIG%\vimfiles"
 
-if exist "%VIMCONFIG%\_gvimrc"  mklink    "%USERPROFILE%\.gvimrc"  "%VIMCONFIG%\_gvimrc"
 if exist "%VIMCONFIG%\_gvimrc"  mklink    "%USERPROFILE%\_gvimrc"  "%VIMCONFIG%\_gvimrc"
-if exist "%VIMCONFIG%\_vimrc"   mklink    "%USERPROFILE%\.vimrc"   "%VIMCONFIG%\_vimrc"
 if exist "%VIMCONFIG%\_vimrc"   mklink    "%USERPROFILE%\_vimrc"   "%VIMCONFIG%\_vimrc"
-if exist "%VIMCONFIG%\_viminfo" mklink /h "%USERPROFILE%\.viminfo" "%VIMCONFIG%\_viminfo"
 if exist "%VIMCONFIG%\_viminfo" mklink /h "%USERPROFILE%\_viminfo" "%VIMCONFIG%\_viminfo"
 if exist "%VIMCONFIG%\vimfiles" mklink /d "%USERPROFILE%\vimfiles" "%VIMCONFIG%\vimfiles"
 
