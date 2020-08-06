@@ -1,8 +1,10 @@
 "set guifont=Consolas:h9
 "set guifont=Consolas:h8
-set guifont=Consolas:h10
+"set guifont=Consolas:h10
+set guifont=Hack:h10
 "set printfont=Consolas:h9
-set printfont=Consolas:h8
+"set printfont=Consolas:h8
+set printfont=Hack:h8
 "set printoptions=syntax:y,left:18pt,right:18pt,top:32pt,bottom:32pt,number:y
 set printoptions=left:18pt,right:18pt,top:25pt,bottom:25pt,header:2,syntax:y,number:y,wrap:y,duplex:off,collate:y,jobsplit:n,portrait:y,paper:letter,formfeed:n
 "set printoptions=left:18pt,right:18pt,top:25pt,bottom:25pt,header:2,syntax:y,number:n,wrap:y,duplex:off,collate:y,jobsplit:n,portrait:y,paper:letter,formfeed:n
