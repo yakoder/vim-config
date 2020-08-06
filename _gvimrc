@@ -25,3 +25,17 @@ let &guioptions = substitute(&guioptions, "t", "", "g")
 "Commented out b/c of following error
 "E329: No menu \"&Show filetypes in menu\"
 "let do_syntax_sel_menu = 1|runtime! synmenu.vim|aunmenu &Syntax.&Show\ filetypes\ in\ menu
+
+" Attempts at fixing UTF-8 issues that occur _only_ in gvim.
+" (Vim in mintty/bash is fine.)
+if has("multi_byte")
+  if &termencoding == ""
+    let &termencoding = &encoding
+  endif
+  set encoding=utf-8
+  setglobal fileencoding=utf-8
+  " Uncomment to have 'bomb' on by default for new files.
+  " Note, this will not apply to the first, empty buffer created at Vim startup.
+  "setglobal bomb
+  set fileencodings=ucs-bom,utf-8,latin1
+endif
