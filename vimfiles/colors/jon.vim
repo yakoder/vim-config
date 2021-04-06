@@ -65,7 +65,7 @@ hi CursorIM       guibg=#ffffff ctermbg=015 guifg=#000000 ctermfg=000
 " CursorLine      the screen line that the cursor is in when 'cursorline' is set
 hi CursorLine     guibg=#121212 ctermbg=233                           gui=NONE      cterm=NONE
 " CursorColumn    the screen column that the cursor is in when 'cursorcolumn' is set
-hi CursorColumn   guibg=#121212 ctermbg=233
+hi CursorColumn   guibg=#121212 ctermbg=233                           gui=NONE      cterm=NONE
 " ColorColumn     used for the columns set with 'colorcolumn'
 hi ColorColumn    guibg=#3a3a3a ctermbg=237
 " CursorLineNr    Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.

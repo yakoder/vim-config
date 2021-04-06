@@ -42,6 +42,10 @@ set history=1000                " default was 200
 set noincsearch                 " default was enabled
 let g:netrw_dirhistmax=0
 
+" the double-slash ending is not expanding (per a few blogs) to the full
+" path (replacing / with %) as expected, so removing, for now.
+"set backupdir=$HOME/.vimbackup//
+
 if has("autocmd")
 
   " replace default vimrcEx to increase textwidth from 78
@@ -98,20 +102,44 @@ set mps+=<:>                      " add angle brakets to make html & xml easier 
 
 set cursorline                    " turn on highlighting the cursor line
 set cursorcolumn                  " show current column
+set modeline
 
 let do_syntax_sel_menu=1
 
+" This must be done before setting colorscheme for the colors to be correct
+set background=dark             " making sure it's a dark background
+"set background=light
+"
 " Load custom colorscheme, defaulting to something close
 "try
 "  colorscheme jon
 "catch /^Vim\%((\a\+)\)\=:E185/
 "  colorscheme ron
 "endtry
-colorscheme elflord
+try
+  colorscheme elflord2
+catch /^Vim\%((\a\+)\)\=:E185/
+  colorscheme elflord
+endtry
 "colorscheme slate
 "colorscheme desert
 "colorscheme murphy
 "colorscheme torte
 
-set background=dark             " making sure it's a dark background
+
+" let g:solarized_termcolors=256
+" let g:solarized_termtrans=1
+" let g:solarized_degrade=1
+" let g:solarized_bold=0
+" let g:solarized_underline=0
+" let g:solarized_italic=0
+" "let g:solarized_contrast="high"
+" let g:solarized_contrast="low"
+" "let g:solarized_contrast="normal"
+" "let g:solarized_visibility="high"
+" "let g:solarized_visibility="low"
+" let g:solarized_visibility="normal"
+" set background=light
+" colo solarized
+"colo elflord2
 
