@@ -126,7 +126,6 @@ endtry
 "colorscheme murphy
 "colorscheme torte
 
-
 " let g:solarized_termcolors=256
 " let g:solarized_termtrans=1
 " let g:solarized_degrade=1
@@ -141,6 +140,5 @@ endtry
 " let g:solarized_visibility="normal"
 " set background=light
 " colo solarized
-"colo elflord2
 
 " vim: filetype=vim ts=2 sw=2 nobomb

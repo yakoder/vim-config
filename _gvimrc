@@ -19,12 +19,14 @@ set mousehide		" Hide the mouse when typing text
 map <S-Insert> <MiddleMouse>
 map! <S-Insert> <MiddleMouse>
 
-" For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries
-let &guioptions = substitute(&guioptions, "t", "", "g")
-" Always show filetypes in menu
-"Commented out b/c of following error
-"E329: No menu \"&Show filetypes in menu\"
-"let do_syntax_sel_menu = 1|runtime! synmenu.vim|aunmenu &Syntax.&Show\ filetypes\ in\ menu
+if has("win32")
+  " For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries
+  let &guioptions = substitute(&guioptions, "t", "", "g")
+  " Always show filetypes in menu
+  "Commented out b/c of following error
+  "E329: No menu \"&Show filetypes in menu\"
+  "let do_syntax_sel_menu = 1|runtime! synmenu.vim|aunmenu &Syntax.&Show\ filetypes\ in\ menu
+endif
 
 " Attempts at fixing UTF-8 issues that occur _only_ in gvim.
 " (Vim in mintty/bash is fine.)
@@ -41,24 +43,33 @@ if has("multi_byte")
 endif
 
 "colo desert
-"    Moved following block to .vimrc
-"    let g:solarized_termcolors=256
-"    let g:solarized_termtrans=1
-"    let g:solarized_degrade=1
-"    let g:solarized_bold=0
-"    let g:solarized_underline=0
-"    let g:solarized_italic=0
-"    "let g:solarized_contrast="high"
-"    let g:solarized_contrast="low"
-"    "let g:solarized_contrast="normal"
-"    "let g:solarized_visibility="high"
-"    "let g:solarized_visibility="low"
-"    let g:solarized_visibility="normal"
-"    set background=light
-"    colo solarized
 
-"set guifont=Hack:h11
-set printfont=Hack\ 10
-set guifont=Hack\ 10
+"  Moved following block to .vimrc
+"  let g:solarized_termcolors=256
+"  let g:solarized_termtrans=1
+"  let g:solarized_degrade=1
+"  let g:solarized_bold=0
+"  let g:solarized_underline=0
+"  let g:solarized_italic=0
+"  "let g:solarized_contrast="high"
+"  let g:solarized_contrast="low"
+"  "let g:solarized_contrast="normal"
+"  "let g:solarized_visibility="high"
+"  "let g:solarized_visibility="low"
+"  let g:solarized_visibility="normal"
+"  set background=light
+"  colo solarized
+
+if has("win32")
+  set printfont=Hack:h10
+  set guifont=Hack:h10
+  "set guifont=Hack:h11
+else
+  set printfont=Hack\ 10
+  set guifont=Hack\ 10
+endif
+
+set background=dark
+colo elflord2
 
 " vim: filetype=vim ts=2 sw=2 nobomb
