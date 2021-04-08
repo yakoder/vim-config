@@ -61,3 +61,4 @@ endif
 set printfont=Hack\ 10
 set guifont=Hack\ 10
 
+" vim: filetype=vim ts=2 sw=2 nobomb

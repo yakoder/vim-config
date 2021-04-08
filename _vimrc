@@ -143,3 +143,4 @@ endtry
 " colo solarized
 "colo elflord2
 
+" vim: filetype=vim ts=2 sw=2 nobomb
