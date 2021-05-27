@@ -116,6 +116,10 @@ set background=dark             " making sure it's a dark background
 "catch /^Vim\%((\a\+)\)\=:E185/
 "  colorscheme ron
 "endtry
+
+" reminder, this does change background to 'dark' and clear
+" bold, underline, and italic support
+" so, use care if changing back to this manually during a vim session
 try
   colorscheme elflord2
 catch /^Vim\%((\a\+)\)\=:E185/
@@ -126,19 +130,24 @@ endtry
 "colorscheme murphy
 "colorscheme torte
 
-" let g:solarized_termcolors=256
-" let g:solarized_termtrans=1
-" let g:solarized_degrade=1
-" let g:solarized_bold=0
-" let g:solarized_underline=0
-" let g:solarized_italic=0
-" "let g:solarized_contrast="high"
-" let g:solarized_contrast="low"
-" "let g:solarized_contrast="normal"
-" "let g:solarized_visibility="high"
-" "let g:solarized_visibility="low"
-" let g:solarized_visibility="normal"
-" set background=light
-" colo solarized
+   "let g:solarized_termcolors=256
+   let g:solarized_termcolors=&t_Co  " uses vim value for termcolors (should be 256)
+   let g:solarized_termtrans=1       " disables changing background color
+   let g:solarized_degrade=1         " uses hexcolors instead of more limited color codes
+   "let g:solarized_bold=0
+   "let g:solarized_underline=0
+   "let g:solarized_italic=0
+   let g:solarized_bold=1
+   let g:solarized_underline=1
+   let g:solarized_italic=1
+   "let g:solarized_contrast="high"
+   "let g:solarized_contrast="low"
+   let g:solarized_contrast="normal"
+   "let g:solarized_visibility="high"
+   "let g:solarized_visibility="low"
+   "let g:solarized_visibility="normal"
+   let g:solarized_visibility="high"
+   set background=light
+   colo solarized
 
 " vim: filetype=vim ts=2 sw=2 nobomb
