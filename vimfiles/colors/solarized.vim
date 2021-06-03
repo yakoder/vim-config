@@ -136,6 +136,7 @@
 
 " Terminals that support italics
 let s:terms_italic=[
+            \"mintty",
             \"rxvt",
             \"gnome-terminal"
             \]
