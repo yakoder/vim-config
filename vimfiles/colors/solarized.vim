@@ -265,18 +265,20 @@ elseif (has("gui_running") && g:solarized_degrade == 1)
     " while in gui mode via "let g:solarized_degrade=1", though this is not
     " recommened and is for testing only.
     let s:vmode       = "gui"
-    let s:base03      = "#1c1c1c"
-    "let s:base03     = '#0d1926'                         " mintty bgcolor
-    let s:base03      = '#171717'                         " win dark bgcolor
+    "let s:base03      = "#1c1c1c"          " original
+    "let s:base03     = "#0d1926"           " mintty bgcolor
+    let s:base03      = "#171717"           " win dark bgcolor (scrollbar)
     let s:base02      = "#262626"
     let s:base01      = "#4e4e4e"
     let s:base00      = "#585858"
     let s:base0       = "#808080"
     let s:base1       = "#8a8a8a"
-    let s:base2       = "#d7d7af"
-    "let s:base3       = "#ffffd7"
-    "let s:base3       = '#eedfc0'      " rgb: 238,223,192            " win light bgcolor (tan)
-    let s:base3       = '#f0efed'       " rgb: 240,239,237            " win light bgcolor (scrollbar)
+    "let s:base2       = "#d7d7af"
+    "let s:base2       = "#f0efed"           " win light bgcolor (scrollbar) rgb: 240,239,237
+    let s:base2       = "#ffffff"
+    "let s:base3       = "#ffffd7"          " original
+    "let s:base3       = "#eedfc0"          " win light bgcolor (tan) rgb: 238,223,192
+    let s:base3       = "#f0efed"           " win light bgcolor (scrollbar) rgb: 240,239,237
     let s:yellow      = "#af8700"
     let s:orange      = "#d75f00"
     let s:red         = "#af0000"
@@ -305,23 +307,23 @@ elseif g:solarized_termcolors != 256 && &t_Co >= 16
     let s:green       = "2"
 elseif g:solarized_termcolors == 256
     let s:vmode       = "cterm"
-    let s:base03      = "234"
-    let s:base02      = "235"
-    let s:base01      = "239"
-    let s:base00      = "240"
-    let s:base0       = "244"
-    let s:base1       = "245"
-    let s:base2       = "187"
-    "let s:base3       = "230"
-    let s:base3       = "15"            " new hex-based base3 doesn't have a close value, so use white
-    let s:yellow      = "136"
-    let s:orange      = "166"
-    let s:red         = "124"
-    let s:magenta     = "125"
-    let s:violet      = "61"
-    let s:blue        = "33"
-    let s:cyan        = "37"
-    let s:green       = "64"
+    let s:base03      = "234"                               " Grey11
+    let s:base02      = "235"                               " Grey15
+    let s:base01      = "239"                               " Grey30
+    let s:base00      = "240"                               " Grey35
+    let s:base0       = "244"                               " Grey50
+    let s:base1       = "245"                               " Grey54
+    "let s:base2       = "187"                               " LightYellow3
+    "let s:base2       = "231"                               " Grey100
+    "let s:base3       = "230"                               " Cornsilk1
+    let s:yellow      = "136"                               " DarkGoldenrod
+    let s:orange      = "166"                               " DarkOrange3
+    let s:red         = "124"                               " Red3
+    let s:magenta     = "125"                               " DeepPink4
+    let s:violet      = "61"                                " SlateBlue3
+    let s:blue        = "33"                                " DodgerBlue1
+    let s:cyan        = "37"                                " LightSeaGreen
+    let s:green       = "64"                                " Chartreuse4
 else
     let s:vmode       = "cterm"
     let s:bright      = "* term=bold cterm=bold"
@@ -398,6 +400,9 @@ if &background == "light"
     if (s:back != "NONE")
         let s:back    = s:base03
     endif
+	
+	" jwarren overrides
+	let s:base0       = "178"                               " Gold3
 endif
 "}}}
 " Optional contrast schemes "{{{
@@ -407,7 +412,7 @@ if g:solarized_contrast == "high"
     let s:base00      = s:base0
     let s:base0       = s:base1
     let s:base1       = s:base2
-    let s:base2       = s:base3
+    "let s:base2       = s:base3
     let s:back        = s:back
 endif
 if g:solarized_contrast == "low"
