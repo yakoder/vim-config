@@ -314,8 +314,8 @@ elseif g:solarized_termcolors == 256
     let s:base0       = "244"                               " Grey50
     let s:base1       = "245"                               " Grey54
     "let s:base2       = "187"                               " LightYellow3
-    "let s:base2       = "231"                               " Grey100
-    "let s:base3       = "230"                               " Cornsilk1
+    let s:base2       = "231"                               " Grey100
+    let s:base3       = "230"                               " Cornsilk1
     let s:yellow      = "136"                               " DarkGoldenrod
     let s:orange      = "166"                               " DarkOrange3
     let s:red         = "124"                               " Red3
