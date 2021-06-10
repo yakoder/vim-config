@@ -266,13 +266,17 @@ elseif (has("gui_running") && g:solarized_degrade == 1)
     " recommened and is for testing only.
     let s:vmode       = "gui"
     let s:base03      = "#1c1c1c"
+    "let s:base03     = '#0d1926'                         " mintty bgcolor
+    let s:base03      = '#171717'                         " win dark bgcolor
     let s:base02      = "#262626"
     let s:base01      = "#4e4e4e"
     let s:base00      = "#585858"
     let s:base0       = "#808080"
     let s:base1       = "#8a8a8a"
     let s:base2       = "#d7d7af"
-    let s:base3       = "#ffffd7"
+    "let s:base3       = "#ffffd7"
+    "let s:base3       = '#eedfc0'      " rgb: 238,223,192            " win light bgcolor (tan)
+    let s:base3       = '#f0efed'       " rgb: 240,239,237            " win light bgcolor (scrollbar)
     let s:yellow      = "#af8700"
     let s:orange      = "#d75f00"
     let s:red         = "#af0000"
@@ -1116,3 +1120,6 @@ autocmd ColorScheme * if g:colors_name != "solarized" | silent! aunmenu Solarize
 "
 " vim:foldmethod=marker:foldlevel=0
 "}}}
+
+" vim: filetype=sh ts=2 sw=2 nobomb
+
