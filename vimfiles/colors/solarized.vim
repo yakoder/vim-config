@@ -402,7 +402,11 @@ if &background == "light"
     endif
 	
 	" jwarren overrides
-	let s:base0       = "178"                               " Gold3
+  if (has("gui_running"))
+    let s:base0       = "#d7af00"                           " Gold3
+  else
+    let s:base0       = "178"                               " Gold3
+  endif
 endif
 "}}}
 " Optional contrast schemes "{{{
