@@ -1,4 +1,11 @@
-source $VIMRUNTIME/vimrc_example.vim
+"source $VIMRUNTIME/vimrc_example.vim
+
+" Fix encoding for Windows' UTF-16LE files
+" per https://stackoverflow.com/questions/12970395/is-it-possible-to-automatically-set-utf16-file-encoding-when-opening-a-file-of-t
+" Bad idea!!! Doing this breaks any and all shell scripts edited with vim with this setting
+" :set fencs=ucs-bom,utf-16le,utf-8,default,latin1
+" Maybe putting the windows stupidity last will still allow editing those
+:set fencs=ucs-bom,utf-8,default,latin1,utf-16le
 
 set diffexpr=MyDiff()
 function MyDiff()
@@ -45,49 +52,50 @@ let g:netrw_dirhistmax=0
 " the double-slash ending is not expanding (per a few blogs) to the full
 " path (replacing / with %) as expected, so removing, for now.
 "set backupdir=$HOME/.vimbackup//
-
-if has("autocmd")
-
-  " replace default vimrcEx to increase textwidth from 78
-  autocmd! vimrcEx
-  augroup vimrcEx
-    au!
-    autocmd FileType text setlocal textwidth=105   
-    " When editing a file, always jump to the last known cursor position.
-    " Don't do it when the position is invalid or when inside an event handler
-    " (happens when dropping a file on gvim).
-    autocmd BufReadPost *
-      \ if line("'\"") >= 1 && line("'\"") <= line("$") |
-      \   exe "normal! g`\"" |
-      \ endif
-  augroup END
-
-  augroup vimrcBex
-    set backupext=.vim~ " aka: bex
-
-    " do before write to get latest timestamp value
-    " note: do _not_ append &bex!!!
-    au BufWritePre * let &bex = '.' . strftime("%Y%m%d%H%M%S") . '.vim~'
-  augroup END
-
-"   augroup localViminfo
-"     " local viminfo filename pattern and loading
-"     let s:baseviminfo = "'100,<50,s10,h,rA:,rB:"
-"     " For .lvi. named files, insert filename into name of viminfo file
-"     let s:lviviminfo = s:baseviminfo . ",n" . expand('%:t') . ".viminfo"
-"     au BufRead *.lvi.* let &vi = s:lviviminfo
-"     au BufRead *.viminfo let &vi = s:defaultviminfo
-"     au BufRead *.lvi.* rv!
-"     au VimLeavePre *.lvi.* let &vi = s:lviviminfo
-"     au VimLeavePre *.viminfo let &vi = s:defaultviminfo
-"     au VimLeavePre *.lvi.* wv!
-"   augroup END
-
-endif " has("autocmd")
+"     
+"     if has("autocmd")
+"     
+"       " replace default vimrcEx to increase textwidth from 78
+"       autocmd! vimrcEx
+"       augroup vimrcEx
+"         au!
+"         autocmd FileType text setlocal textwidth=105   
+"         " When editing a file, always jump to the last known cursor position.
+"         " Don't do it when the position is invalid or when inside an event handler
+"         " (happens when dropping a file on gvim).
+"         autocmd BufReadPost *
+"           \ if line("'\"") >= 1 && line("'\"") <= line("$") |
+"           \   exe "normal! g`\"" |
+"           \ endif
+"       augroup END
+"     
+"       augroup vimrcBex
+"         set backupext=.vim~ " aka: bex
+"     
+"         " do before write to get latest timestamp value
+"         " note: do _not_ append &bex!!!
+"         au BufWritePre * let &bex = '.' . strftime("%Y%m%d%H%M%S") . '.vim~'
+"       augroup END
+"     
+"     "   augroup localViminfo
+"     "     " local viminfo filename pattern and loading
+"     "     let s:baseviminfo = "'100,<50,s10,h,rA:,rB:"
+"     "     " For .lvi. named files, insert filename into name of viminfo file
+"     "     let s:lviviminfo = s:baseviminfo . ",n" . expand('%:t') . ".viminfo"
+"     "     au BufRead *.lvi.* let &vi = s:lviviminfo
+"     "     au BufRead *.viminfo let &vi = s:defaultviminfo
+"     "     au BufRead *.lvi.* rv!
+"     "     au VimLeavePre *.lvi.* let &vi = s:lviviminfo
+"     "     au VimLeavePre *.viminfo let &vi = s:defaultviminfo
+"     "     au VimLeavePre *.lvi.* wv!
+"     "   augroup END
+"     
+"     endif " has("autocmd")
 
 " Override whatever came from filetype indent files
 set autoindent                    " always set autoindenting on
-set smartindent                   " enable smartindenting as well
+" jwarren[20210820] disabled si, it seemed to incorrectly change comment char placement (e.g., '#')
+"set smartindent                   " enable smartindenting as well
 set expandtab                     " Die, evil tab characters! Die!
 set shiftwidth=4
 set tabstop=4
@@ -110,54 +118,64 @@ let do_syntax_sel_menu=1
 "set background=dark             " making sure it's a dark background
 "set background=light
 let backgroundscheme=$BACKGROUND_SCHEME
-if backgroundscheme == 'dark'
-  set background=dark
-else
+if backgroundscheme == 'light'
   set background=light
+"elseif backgroundscheme == 'dark'
+else
+  set background=dark
 endif
 
-" Load custom colorscheme, defaulting to something close
-"try
-"  colorscheme jon
-"catch /^Vim\%((\a\+)\)\=:E185/
-"  colorscheme ron
-"endtry
+if backgroundscheme == 'light' || backgroundscheme == 'dark'
+"if &background == 'light' || &background == 'dark'
+  "let g:solarized_termcolors=256
+  let g:solarized_termcolors=&t_Co  " uses vim value for termcolors (should be 256)
+  let g:solarized_termtrans=1       " disables changing background color
+  let g:solarized_degrade=1         " uses hexcolors instead of more limited color codes
+  let g:solarized_degrade=0         " uses hexcolors instead of more limited color codes
 
-" reminder, this does change background to 'dark' and clear
-" bold, underline, and italic support
-" so, use care if changing back to this manually during a vim session
-"   try
-"     colorscheme elflord2
-"   catch /^Vim\%((\a\+)\)\=:E185/
-"     colorscheme elflord
-"   endtry
-"colorscheme slate
-"colorscheme desert
-"colorscheme murphy
-"colorscheme torte
+  "let g:solarized_bold=0
+  "let g:solarized_underline=0
+  "let g:solarized_italic=0
+  let g:solarized_bold=1
+  let g:solarized_underline=1
+  let g:solarized_italic=1
 
-   "let g:solarized_termcolors=256
-   let g:solarized_termcolors=&t_Co  " uses vim value for termcolors (should be 256)
-   let g:solarized_termtrans=1       " disables changing background color
-   let g:solarized_degrade=1         " uses hexcolors instead of more limited color codes
+  "let g:solarized_contrast="low"
+  "let g:solarized_contrast="normal"
+  let g:solarized_contrast="high"
 
-   "let g:solarized_bold=0
-   "let g:solarized_underline=0
-   "let g:solarized_italic=0
-   let g:solarized_bold=1
-   let g:solarized_underline=1
-   let g:solarized_italic=1
+  "let g:solarized_visibility="high"
+  "let g:solarized_visibility="low"
+  "let g:solarized_visibility="normal"
+  let g:solarized_visibility="high"
 
-   "let g:solarized_contrast="low"
-   "let g:solarized_contrast="normal"
-   let g:solarized_contrast="high"
+  "set background=light
+  colo solarized
+else
+  " Load custom colorscheme, defaulting to something close
+  "try
+  "  colorscheme jon
+  "catch /^Vim\%((\a\+)\)\=:E185/
+  "  colorscheme ron
+  "endtry
 
-   "let g:solarized_visibility="high"
-   "let g:solarized_visibility="low"
-   "let g:solarized_visibility="normal"
-   let g:solarized_visibility="high"
-
-   "set background=light
-   colo solarized
+  " reminder, this does change background to 'dark' and clear
+  " bold, underline, and italic support
+  " so, use care if changing back to this manually during a vim session
+"  try
+"    colorscheme elflord2
+"  catch /^Vim\%((\a\+)\)\=:E185/
+"    colorscheme elflord
+"  endtry
+  "colorscheme slate
+  "colorscheme desert
+  "colorscheme murphy
+  "colorscheme torte
+  if &background == 'light'
+    colo nuvola
+  else
+    colorscheme murphy
+  endif
+endif
 
 " vim: filetype=vim ts=2 sw=2 nobomb

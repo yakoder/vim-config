@@ -1,4 +1,4 @@
-vim_config="${CFG_FOLDER}/vim-config"
+vim_config="/cygdrive/c/dev/code/private/yakoder/vim-config"
 
 if [[ ! -d "${vim_config}" ]]; then
     echo "Aborting..."
